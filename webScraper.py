@@ -6,10 +6,11 @@ try:
     html = ureq.urlopen(url).read()
     soup = BeautifulSoup(html,'html.parser')
     tags = soup('a')
-    fileh = open('linksInGoogle.txt','w')
-    print(soup)
     for tg in tags:
-        print(tg.get('href',None))
+        print('tag : ',tg)
+        print('URL fetched : ',tg.get('href',None))
+        print('Contents: ',tg.contents[0])
+        print('Attrs : ',tg.attrs)
         
 except Exception:
     print('Action prohibited \n:-(','Quitting this request')
