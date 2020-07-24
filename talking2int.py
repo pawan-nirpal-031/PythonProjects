@@ -12,3 +12,4 @@ while True:
     print(data.decode(),end='')
 
 mysock.close()
+print(type(data))
