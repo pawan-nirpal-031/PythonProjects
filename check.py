@@ -1,14 +1,6 @@
-# def add(a,b,c='None'):
-#     if(c=='None'):
-#         return a+b
-#     else:
-#         return a+b+c
-
-# x = add
-# print(x(1,2))
-name = 'christoper hidwig harry potter'.split()
-print(name)
-if('chris' in name[0]):
-    print('yes')
-else:
-    print('no')
+import numpy as np
+import matplotlib.pyplot as plt
+x = [i for i in range(100)]
+y = [i*i for i in range(100)]
+plt.plot(x,y)
+plt.show()
