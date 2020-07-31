@@ -24,13 +24,6 @@ class graph:
         self.y = [m*i+c for i in range(1000)]
         plt.plot(self.x,self.y)
         plt.show()
-        print('Get a fun val : ')
-        b = bool(input('Yes or No'))
-        if(b):
-            x = int(input('Enter x '))
-            return self.getFunVal(x)
-        else:
-           return -1 
     
     
 g1 = graph()
